@@ -83,6 +83,7 @@ var qtext = function (qnumber) {
 var checker = function (event) {
   //function to check answers agains the key, takes in the event as input
   var element = event.target; //what did you click?
+  console.log(element.innerHTML, currentA); //log the text of the button clicked and the correct answer (for debugging
   if (element.innerHTML == currentA) {
     //does the text in the button you clicked match the correct answer?
     //Yes, correct
