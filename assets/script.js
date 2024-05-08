@@ -25,29 +25,29 @@ var ScoreButton = document.getElementById("ScoreButton");
 
 //The questions, saved as objects
 var question1 = {
-  Q: "What symbol is used to contain an object?", //question
-  A1: "()", //options
-  A2: "[]",
-  A3: "<>",
-  A4: "{}",
-  CA: "A4", //correct answer is A4 "{}"
+  Q: "Which operator means Greater than or Equal to?", //question
+  A1: ">==", //options
+  A2: ">=",
+  A3: "<=",
+  A4: "=>",
+  CA: "A2", //correct answer is A4 "{}"
 };
 
 var question2 = {
-  Q: " The statement '2' === 2 would return",
-  A1: "true, because statement is checking the values are same ",
-  A2: "false, because the statement checks for value and data type",
-  A3: "undefined, because statement is not for this purpose",
-  A4: "false, because the statement checks the data type only",
-  CA: "A2",
+  Q: " The statement 2 = '2' would return",
+  A1: "true, because the statement checks the values, which are equal",
+  A2: "Nothing, because the statement isn't printing anything",
+  A3: "SyntaxError",
+  A4: "false, because the data type are different string vs interger",
+  CA: "A3",
 };
 
 var question3 = {
-  Q: "Where should the script tag to our JS file be in the HTML document?",
-  A1: "Before the head element",
-  A2: "In the head element",
-  A3: "At the top of the body",
-  A4: "At the bottom of the body",
+  Q: "How could we NOT run python code:",
+  A1: "Double click the .py file",
+  A2: "Run the code in a terminal with 'python/py/python3 filename.py'",
+  A3: "type 'python/py/python3' in the terminal and run the code from there",
+  A4: "Use plugins in VSCode to run the code",
   CA: "A4",
 };
 
