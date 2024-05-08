@@ -48,7 +48,7 @@ var question3 = {
   A2: "Run the code in a terminal with 'python/py/python3 filename.py'",
   A3: "type 'python/py/python3' in the terminal and run the code from there",
   A4: "Use plugins in VSCode to run the code",
-  CA: "A4",
+  CA: "A1",
 };
 
 //build a catalogue of questions
