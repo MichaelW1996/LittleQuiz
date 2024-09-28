@@ -25,31 +25,122 @@ var ScoreButton = document.getElementById("ScoreButton");
 
 //The questions, saved as objects
 var question1 = {
-  Q: "Which operator means Greater than or Equal to?", //question
-  A1: ">==", //options
-  A2: ">=",
-  A3: "<=",
-  A4: "=>",
-  CA: "A2", //correct answer is A4 "{}"
+  Q: "What pair of characters delimits a List, Tuple, Dictionary?",
+  A1: "[]",
+  A2: "()",
+  A3: "{}",
+  A4: "<>",
+  CA: "A1"
 };
 
 var question2 = {
-  Q: " The statement 2 = '2' would return",
-  A1: "true, because the statement checks the values, which are equal",
-  A2: "Nothing, because the statement isn't printing anything",
-  A3: "SyntaxError",
-  A4: "false, because the data type are different string vs interger",
-  CA: "A3",
+  Q: "What is the difference between a variable and a constant, what are they used for?",
+  A1: "A variable can change its value during the execution of a program, while a constant's value remains fixed. They are used to store data that may change (variable) or remains constant throughout the program (constant).",
+  A2: "A variable's value remains fixed, while a constant can change its value during the execution of a program. They are used to store data that may change (variable) or remains constant throughout the program (constant).",
+  A3: "A variable can change its value during the execution of a program, while a constant's value remains fixed. They are used to store data that remains constant throughout the program (variable) or may change (constant).",
+  A4: "A variable's value remains fixed, while a constant can change its value during the execution of a program. They are used to store data that remains constant throughout the program (variable) or may change (constant).",
+  CA: "A1"
 };
 
 var question3 = {
-  Q: "How could we NOT run python code:",
-  A1: "Double click the .py file",
-  A2: "Run the code in a terminal with 'python/py/python3 filename.py'",
-  A3: "type 'python/py/python3' in the terminal and run the code from there",
-  A4: "Use plugins in VSCode to run the code",
-  CA: "A1",
+  Q: "What are the different data types in Python?",
+  A1: "int, float, str, list, tuple, dict, set, bool",
+  A2: "char, string, array, list, tuple, dict, set, bool",
+  A3: "int, float, str, array, list, tuple, dict, set",
+  A4: "int, float, string, list, tuple, dictionary, set, boolean",
+  CA: "A1"
 };
+
+var question4 = {
+  Q: "What is the difference between a float, integer, and string?",
+  A1: "A float stores whole numbers, an integer stores decimal numbers, a string stores numerical values.",
+  A2: "A float is a numerical data type that stores decimal numbers, an integer stores whole numbers, and a string stores text.",
+  A3: "A float stores decimal numbers, an integer stores whole numbers, and a string stores text.",
+  A4: "A float stores numerical values, an integer stores decimal numbers, and a string stores whole numbers.",
+  CA: "A2"
+};
+
+var question5 = {
+  Q: "What is a tuple?",
+  A1: "A tuple is an immutable sequence of Python objects.",
+  A2: "A tuple is a mutable sequence of Python objects.",
+  A3: "A tuple is a data type used for storing text.",
+  A4: "A tuple is a data type used for storing numerical values.",
+  CA: "A1"
+};
+
+var question6 = {
+  Q: "What is special about a dictionary?",
+  A1: "A dictionary is an ordered collection of key-value pairs.",
+  A2: "A dictionary is an unordered collection of key-value pairs where keys are unique.",
+  A3: "A dictionary is a sequence of Python objects.",
+  A4: "A dictionary is a data type used for storing numerical values.",
+  CA: "A2"
+};
+
+var question7 = {
+  Q: "What is the difference between iteration and selection, what commands/verbs (If,For....) would you use for each type?",
+  A1: "Iteration involves repeating a set of statements based on a condition. Commands/verbs used: For loop. Selection involves choosing between different statements based on a condition. Commands/verbs used: If, Else.",
+  A2: "Selection involves repeating a set of statements based on a condition. Commands/verbs used: For loop. Iteration involves choosing between different statements based on a condition. Commands/verbs used: If, Else.",
+  A3: "Iteration involves choosing between different statements based on a condition. Commands/verbs used: If, Else. Selection involves repeating a set of statements based on a condition. Commands/verbs used: For loop.",
+  A4: "Selection involves choosing between different statements based on a condition. Commands/verbs used: If, Else. Iteration involves repeating a set of statements based on a condition. Commands/verbs used: For loop.",
+  CA: "A1"
+};
+
+var question8 = {
+  Q: "What method could add to capitalize the first letter of a string?",
+  A1: "upper()",
+  A2: "title()",
+  A3: "initcap()",
+  A4: "capitalize()",
+  CA: "A4"
+};
+
+var question9 = {
+  Q: "What is an object in Python?",
+  A1: "An object is a built-in data type in Python.",
+  A2: "An object is an instance of a class that includes properties and Methods.",
+  A3: "An object is a data type used for storing text.",
+  A4: "An object is a data type used for storing numerical values.",
+  CA: "A2"
+};
+
+var question10 = {
+  Q: "What is a while loop used for?",
+  A1: "A while loop is used to execute a block of code a fixed number of times.",
+  A2: "A while loop is used to repeatedly execute a block of code as long as a condition is true.",
+  A3: "A while loop is used to execute a block of code based on a condition until the condition becomes false.",
+  A4: "A while loop is used to execute a block of code once.",
+  CA: "A2"
+};
+
+var question11 = {
+  Q: "What does refactoring mean from a coding and maintenance perspective?",
+  A1: "Refactoring means restructuring existing computer code without changing its external behavior to improve readability, maintainability, and performance.",
+  A2: "Refactoring means adding new features to existing code.",
+  A3: "Refactoring means deleting existing code.",
+  A4: "Refactoring means changing the external behavior of existing code without changing its internal structure",
+  CA: "A1"
+};
+
+var question12 = {
+  Q: "What is the purpose of an IDE?",
+  A1: "An IDE is used to execute Python code.",
+  A2: "An IDE is used to write code only.",
+  A3: "An IDE is used to debug code.",
+  A4: "An IDE is used to provide comprehensive facilities to programmers for software development.",
+  CA: "A4"
+};
+
+var question13 = {
+  Q: "What is the difference between an interpreted programming language and a compiled language?",
+  A1: "In an interpreted language, code is translated into machine code before execution. In a compiled language, code is executed line by line at runtime.",
+  A2: "In a compiled language, code is translated into machine code before execution. In an interpreted language, code is executed line by line at runtime.",
+  A3: "In an interpreted language, code is executed line by line at runtime. In a compiled language, code is translated into machine code before execution.",
+  A4: "In a compiled language, code is executed line by line at runtime",
+  CA: "A3"
+};
+
 
 //build a catalogue of questions
 var QuestionArray = [question1, question2, question3];
